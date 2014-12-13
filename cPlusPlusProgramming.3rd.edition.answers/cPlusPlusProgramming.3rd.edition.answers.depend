@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1418396564 source:d:\githubrep\cplusplusprogramming.3rd.edition.answers\cplusplusprogramming.3rd.edition.answers\main.cpp
+1418481834 source:d:\githubrep\cplusplusprogramming.3rd.edition.answers\cplusplusprogramming.3rd.edition.answers\main.cpp
 	<iostream>
 	"chap04.h"
 	"chap05.h"
@@ -9,7 +9,7 @@
 	<typeinfo>
 	<limits>
 
-1418396600 d:\githubrep\cplusplusprogramming.3rd.edition.answers\cplusplusprogramming.3rd.edition.answers\chap05.h
+1418482955 d:\githubrep\cplusplusprogramming.3rd.edition.answers\cplusplusprogramming.3rd.edition.answers\chap05.h
 	<iostream>
 	<typeinfo>
 	<limits>
@@ -18,4 +18,6 @@
 	<algorithm>
 	<string>
 	<string.h>
+	<list>
+	<set>
 

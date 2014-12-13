@@ -21,7 +21,11 @@ int main()
     //chap05::Exercise_5_07();
     //chap05::Exercise_5_08();
     //chap05::Exercise_5_09();
-    chap05::Exercise_5_10();
+    //chap05::Exercise_5_10();
+    //chap05::Exercise_5_11();
+    //chap05::Exercise_5_12();
+    chap05::Exercise_5_13();
+
 
     return 0;
 }

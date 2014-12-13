@@ -6,6 +6,9 @@
 #include <algorithm>
 #include <string>
 #include <string.h>
+#include <list>
+#include <set>
+
 using std::cout;
 using std::endl;
 using std::copy;
@@ -221,6 +224,7 @@ namespace chap05{
         for(int k=0;k!=num_months;++k)
             cout<<monthNames[k] << endl;
     }
+
     void Exercise_5_10()
     {
         int num_months = 12;
@@ -228,6 +232,104 @@ namespace chap05{
                                         "June","July","August","September","october",
                                         "November","december"};
         print_months(month_names2,num_months);
+    }
+//////////////////////////////////////////////////////////////////////////////
+
+    void Exercise_5_11()
+    {
+        /*
+        typedef std::set<string> WordSet;
+        typedef WordSet::iterator WordIter;
+        typedef std::list<WordIter> Index;
+        WordSet words;
+        Index input_order;
+        // Input the words uniquely
+        for(string new_word;
+                std::cin >> new_word, new_word!="Quit";){
+                    std::pair<WordIter, bool> &trace = words.insert(new_word);
+                    if(trace.second)
+                        input_order.push_back(trace.first);
+                }
+        //output unique words in order of input:
+        std::
+        copy(input_order.begin(),input_order.end(),ostream_iterator<string>(cout,"\n"));
+        // output unique words in default set<string> order:
+        copy(words.beging(),words.end(),ostream_iterator<string>(cout,"\n"));
+        */
+    }
+//////////////////////////////////////////////////////////////////////////////
+    size_t count_charpair(std::basic_string<char>  &s,char a, char b)
+    {
+        size_t result = 0;
+        //std::string::iterator p = s.begin();
+        std::basic_string<char>::iterator  p = s.begin();
+        while(p!=s.end())
+            if(*p++==a)
+                if(p!=s.end() && *p == b)
+                    ++result;
+        return result;
+    }
+
+    size_t count_charpair(char *s,char a,char b)
+    {
+        size_t result = 0;
+        while(*s)
+            if(*s++==a)
+                if(*s==b)
+                    ++result;
+        return result;
+    }
+
+    void Exercise_5_12()
+    {
+        std::string str="aaaa";
+        cout<< "num: " << count_charpair(str,'a','a');
+
+        //c-style string
+        char* _str = "aaaa";
+        cout<< endl <<  "num: "<< count_charpair(_str,'a','a');
+    }
+//////////////////////////////////////////////////////////////////////////////
+
+    struct Date
+    {
+        unsigned day_:5;
+        unsigned month_:4;
+        int year_:15;
+    };
+    std::istream& operator>>(std::istream& input,Date &d)
+    {
+        int const bufSize = 6;
+        char buffer[bufSize];
+        input.getline(buffer,bufSize,'/');
+        d.month_ = atoi(buffer);
+        input.getline(buffer, bufSize,'/');
+        d.day_ = atoi(buffer);
+        input.getline(buffer, bufSize,'/n');
+        d.year_ = atoi(buffer);
+        return input;
+    }
+
+    std::ostream& operator<<(std::ostream &output,Date &d)
+    {
+        output << d.month_ << '/' << d.day_ << '/' << d.year_;
+        return output;
+    }
+
+    Date& init(Date& d,unsigned day,unsigned month,int year)
+    {
+        d.day_ = day;
+        d.month_ = month;
+        d.year_ = year;
+        return d;
+    }
+
+    void Exercise_5_13()
+    {
+        cout<<"Enter date with format month/day/year: ";
+        Date d;
+        std::cin>>d;
+        cout<<d;
     }
 //////////////////////////////////////////////////////////////////////////////
 
