@@ -1,8 +1,9 @@
 # depslib dependency file v1.0
-1418481834 source:d:\githubrep\cplusplusprogramming.3rd.edition.answers\cplusplusprogramming.3rd.edition.answers\main.cpp
+1419101213 source:d:\githubrep\cplusplusprogramming.3rd.edition.answers\cplusplusprogramming.3rd.edition.answers\main.cpp
 	<iostream>
 	"chap04.h"
 	"chap05.h"
+	"chap06.h"
 
 1418389709 d:\githubrep\cplusplusprogramming.3rd.edition.answers\cplusplusprogramming.3rd.edition.answers\chap04.h
 	<iostream>
@@ -20,4 +21,12 @@
 	<string.h>
 	<list>
 	<set>
+
+1419102395 d:\githubrep\cplusplusprogramming.3rd.edition.answers\cplusplusprogramming.3rd.edition.answers\chap06.h
+	<iostream>
+	<map>
+	<string>
+	<iomanip>
+	<cstddef>
+	<assert.h>
 

@@ -1,6 +1,7 @@
 #include <iostream>
 #include "chap04.h"
 #include "chap05.h"
+#include "chap06.h"
 using namespace std;
 using namespace chap04;
 int main()
@@ -24,8 +25,16 @@ int main()
     //chap05::Exercise_5_10();
     //chap05::Exercise_5_11();
     //chap05::Exercise_5_12();
-    chap05::Exercise_5_13();
+    //chap05::Exercise_5_13();
 
+    //chap06::Exercise_6_01();
+    //chap06::Exercise_6_01();
+    //chap06::Exercise_6_03();
+    //chap06::Exercise_6_04();
+    //chap06::Exercise_6_05();
+    //chap06::Exercise_6_06();
+    //chap06::Exercise_6_07();
+    //chap06::Exercise_6_10();
 
     return 0;
 }
