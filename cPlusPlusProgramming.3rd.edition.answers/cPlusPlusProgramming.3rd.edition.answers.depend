@@ -1,9 +1,10 @@
 # depslib dependency file v1.0
-1419101213 source:d:\githubrep\cplusplusprogramming.3rd.edition.answers\cplusplusprogramming.3rd.edition.answers\main.cpp
+1419696072 source:d:\githubrep\cplusplusprogramming.3rd.edition.answers\cplusplusprogramming.3rd.edition.answers\main.cpp
 	<iostream>
 	"chap04.h"
 	"chap05.h"
 	"chap06.h"
+	"calculator.h"
 
 1418389709 d:\githubrep\cplusplusprogramming.3rd.edition.answers\cplusplusprogramming.3rd.edition.answers\chap04.h
 	<iostream>
@@ -22,11 +23,20 @@
 	<list>
 	<set>
 
-1419102395 d:\githubrep\cplusplusprogramming.3rd.edition.answers\cplusplusprogramming.3rd.edition.answers\chap06.h
+1419696059 d:\githubrep\cplusplusprogramming.3rd.edition.answers\cplusplusprogramming.3rd.edition.answers\chap06.h
 	<iostream>
 	<map>
 	<string>
 	<iomanip>
 	<cstddef>
 	<assert.h>
+	<cstring>
+	<limits>
+	<stdexcept>
+
+1419694680 d:\githubrep\cplusplusprogramming.3rd.edition.answers\cplusplusprogramming.3rd.edition.answers\calculator.h
+	<iostream>
+	<string>
+	<map>
+	<cctype>
 

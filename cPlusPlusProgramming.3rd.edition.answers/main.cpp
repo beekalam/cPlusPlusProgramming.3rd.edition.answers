@@ -2,6 +2,7 @@
 #include "chap04.h"
 #include "chap05.h"
 #include "chap06.h"
+#include "calculator.h"
 using namespace std;
 using namespace chap04;
 int main()
@@ -35,6 +36,14 @@ int main()
     //chap06::Exercise_6_06();
     //chap06::Exercise_6_07();
     //chap06::Exercise_6_10();
+    //chap06::Exercise_6_13();
+    //chap06::Exercise_6_14();
+    //chap06::Exercise_6_15();
+    // chap06::Exercise_6_16();
+	//chap06::Exercise_6_17();
+    //chap06::Exercise_6_19();
+    //chap06::Exercise_6_22();
+
 
     return 0;
 }
